@@ -1,0 +1,10 @@
+[ui]
+username = Kei KATO <k4t0.kei@gmail.com>
+verbose = True
+merge = meld
+
+[extensions]
+extdiff =
+
+[extdiff]
+cmd.meld =
