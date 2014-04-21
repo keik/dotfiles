@@ -63,9 +63,9 @@ complete -d cd
 # location
 
 # Java
-JAVA_HOME="C:\Program Files\Java\jdk1.7.0_17"
+JAVA_HOME="/usr/java/default"
 if [[ -d $JAVA_HOME ]]; then
-    export JAVA_HOME="C:\Program Files\Java\jdk1.7.0_17"
+    export JAVA_HOME="$JAVA_HOME"
 fi
 
 # TeX
@@ -75,7 +75,7 @@ if [[ -d $TEX_BIN_DIR ]]; then
 fi
 
 # Android
-ANDROID_SDK_DIR="/usr/local/java/adt-bundle-linux-x86_64-20130219/sdk"
+ANDROID_SDK_DIR="~/work/android/adt/sdk"
 if [[ -d $ANDROID_SDK_DIR ]]; then
     export PATH="$ANDROID_SDK_DIR/tools:$ANDROID_SDK_DIR/platform-tools:$PATH"
 fi
