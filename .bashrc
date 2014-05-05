@@ -66,6 +66,14 @@ complete -d cd
 JAVA_HOME="/usr/java/default"
 if [[ -d $JAVA_HOME ]]; then
     export JAVA_HOME="$JAVA_HOME"
+    export PATH="$JAVA_HOME:$PATH"
+fi
+
+M2_HOME="/usr/local/maven"
+if [[ -d $M2_HOME ]]; then
+    export M2_HOME="$M2_HOME"
+    export M2="$M2_HOME/bin"
+    export PATH="$M2:$PATH"
 fi
 
 # TeX
@@ -95,9 +103,10 @@ fi
 
 # Python
 if [[ -f /usr/bin/virtualenvwrapper.sh ]]; then
+    export VIRTUALENVWRAPPER_PYTHON="/usr/bin/python2.6"
     export WORKON_HOME=$HOME/.virtualenvs
     source /usr/bin/virtualenvwrapper.sh
-    workon default
+    workon d
 fi
 
 # ------------------------------------------------------------------------------
