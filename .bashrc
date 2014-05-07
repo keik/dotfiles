@@ -105,7 +105,6 @@ fi
 if [[ -f /usr/bin/virtualenvwrapper.sh ]]; then
     export VIRTUALENVWRAPPER_PYTHON="/usr/bin/python2.6"
     export WORKON_HOME=$HOME/.virtualenvs
-    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.6
     source /usr/bin/virtualenvwrapper.sh
     workon d
 fi
