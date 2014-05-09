@@ -69,6 +69,7 @@ if [[ -d $JAVA_HOME ]]; then
     export PATH="$JAVA_HOME:$PATH"
 fi
 
+# Maven
 M2_HOME="/usr/local/maven"
 if [[ -d $M2_HOME ]]; then
     export M2_HOME="$M2_HOME"
