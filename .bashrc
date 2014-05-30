@@ -84,7 +84,7 @@ if [[ -d $TEX_BIN_DIR ]]; then
 fi
 
 # Android
-ANDROID_SDK_DIR="~/work/android/adt/sdk"
+ANDROID_SDK_DIR="$HOME/work/android/adt/sdk"
 if [[ -d $ANDROID_SDK_DIR ]]; then
     export PATH="$ANDROID_SDK_DIR/tools:$ANDROID_SDK_DIR/platform-tools:$PATH"
 fi
