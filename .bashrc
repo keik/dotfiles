@@ -77,6 +77,12 @@ if [[ -d $M2_HOME ]]; then
     export PATH="$M2:$PATH"
 fi
 
+# Ant
+ANT_HOME="/usr/local/ant"
+if [[ -d $ANT_HOME ]]; then
+    export PATH="$ANT_HOME/bin:$PATH"
+fi
+
 # TeX
 TEX_BIN_DIR="/usr/local/texlive/2013/bin/x86_64-linux"
 if [[ -d $TEX_BIN_DIR ]]; then
