@@ -18,7 +18,7 @@ alias mv='mv -i'
 alias grep='grep --color'
 
 # directory listings
-alias ls='ls -hF --color=always --show-control-chars'
+# alias ls='ls -hF --color=always --show-control-chars'
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
@@ -113,6 +113,12 @@ if [[ -f /usr/bin/virtualenvwrapper.sh ]]; then
     export VIRTUALENVWRAPPER_PYTHON="/usr/bin/python2.6"
     export WORKON_HOME=$HOME/.virtualenvs
     source /usr/bin/virtualenvwrapper.sh
+fi
+
+# EditorConfig
+EC_HOME="/usr/local/editorconfig"
+if [[ -d $EC_HOME ]]; then
+    export PATH="$EC_HOME/bin:$PATH"
 fi
 
 # ------------------------------------------------------------------------------
