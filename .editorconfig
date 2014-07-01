@@ -15,3 +15,14 @@ indent_size = 2
 [**.js]
 indent_style = space
 indent_size = 2
+
+[**.java]
+indent_style = space
+indent_size = 4
+
+[**.less]
+indent_style = space
+indent_size = 4
+
+[**.el]
+indent_style = space
