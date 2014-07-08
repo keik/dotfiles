@@ -109,10 +109,17 @@ if [[ -f $NVM_SH ]]; then
 fi
 
 # Python
-if [[ -f /usr/bin/virtualenvwrapper.sh ]]; then
+PYENV_HOME="$HOME/.pyenv/"
+if [[ -d $PYENV_HOME ]]; then
+    export PATH="$HOME/.pyenv/bin:$PATH"
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
+VIRTUALENVWRAPPER_SH="/usr/bin/virtualenvwrapper.sh"
+if [[ -f $VIRTUALENVWRAPPER_SH ]]; then
     export VIRTUALENVWRAPPER_PYTHON="/usr/bin/python2.6"
     export WORKON_HOME=$HOME/.virtualenvs
-    source /usr/bin/virtualenvwrapper.sh
+    source $VIRTUALENVWRAPPER_SH
 fi
 
 # EditorConfig

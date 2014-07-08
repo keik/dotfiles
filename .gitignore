@@ -3,3 +3,4 @@
 .emacs.d/elpa/
 .emacs.d/.session
 .emacs.d/shellenv.el
+.DS_Store
