@@ -30,6 +30,3 @@ indent_style = space
 [**.xml]
 indent_style = space
 indent_size = 2
-
-[**.rst]
-indent_style = space
