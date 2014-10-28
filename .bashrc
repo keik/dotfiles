@@ -84,7 +84,7 @@ if [[ -d $ANT_HOME ]]; then
 fi
 
 # TeX
-TEX_BIN_DIR="/usr/local/texlive/2013/bin/x86_64-linux"
+TEX_BIN_DIR="/usr/local/texlive/2014/bin/x86_64-linux"
 if [[ -d $TEX_BIN_DIR ]]; then
     export PATH="$TEX_BIN_DIR:$PATH"
 fi
