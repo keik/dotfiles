@@ -5,6 +5,7 @@ merge = meld
 
 [extensions]
 extdiff =
+strip =
 
 [extdiff]
 cmd.meld =
