@@ -3,4 +3,7 @@
 .emacs.d/elpa/
 .emacs.d/.session
 .emacs.d/shellenv.el
+.emacs.d/kkcrc
+.emacs.d/ido.last
+.emacs.d/srecode-map.el
 .DS_Store
