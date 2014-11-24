@@ -6,4 +6,5 @@
 .emacs.d/kkcrc
 .emacs.d/ido.last
 .emacs.d/srecode-map.el
+.emacs.d/semanticdb
 .DS_Store
