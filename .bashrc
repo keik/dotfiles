@@ -18,7 +18,7 @@ alias mv='mv -i'
 alias grep='grep --color'
 
 # directory listings
-# alias ls='ls -hF --color=always --show-control-chars'
+alias ls='ls -F --color=auto --show-control-chars'
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
@@ -67,6 +67,12 @@ JAVA_HOME="/usr/java/default"
 if [[ -d $JAVA_HOME ]]; then
     export JAVA_HOME="$JAVA_HOME"
     export PATH="$JAVA_HOME:$PATH"
+fi
+
+# jc
+JC_BIN_DIR="$HOME/.jc/bin"
+if [[ -d $JC_BIN_DIR ]]; then
+    export PATH="$JC_BIN_DIR:$PATH"
 fi
 
 # Maven
