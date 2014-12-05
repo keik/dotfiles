@@ -1,6 +1,7 @@
 .emacs.d/ac-comphist.dat
 .emacs.d/auto-save-list/
 .emacs.d/elpa/
+.emacs.d/eshell/
 .emacs.d/.session
 .emacs.d/shellenv.el
 .emacs.d/kkcrc
