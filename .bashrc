@@ -13,6 +13,7 @@ fi
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias xclip='xclip -selection c'
 
 # misc
 alias grep='grep --color'
