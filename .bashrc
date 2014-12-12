@@ -70,11 +70,13 @@ if [[ -d $JAVA_HOME ]]; then
     export PATH="$JAVA_HOME:$PATH"
 fi
 
+# gvm
+GVM_HOME="$HOME/.gvm"
+[[ -d $GVM_HOME ]] && source "$GVM_HOME/bin/gvm-init.sh"
+
 # jc
-JC_BIN_DIR="$HOME/.jc/bin"
-if [[ -d $JC_BIN_DIR ]]; then
-    export PATH="$JC_BIN_DIR:$PATH"
-fi
+JC_HOME="$HOME/.jc"
+[[ -d $JC_HOME ]] && export PATH="$JC_BIN_DIR/bin:$PATH"
 
 # Maven
 M2_HOME="/usr/local/maven"
@@ -86,54 +88,38 @@ fi
 
 # Ant
 ANT_HOME="/usr/local/ant"
-if [[ -d $ANT_HOME ]]; then
-    export PATH="$ANT_HOME/bin:$PATH"
-fi
+[[ -d $ANT_HOME ]] && export PATH="$ANT_HOME/bin:$PATH"
 
 # TeX
 TEX_BIN_DIR="/usr/local/texlive/2014/bin/x86_64-linux"
-if [[ -d $TEX_BIN_DIR ]]; then
-    export PATH="$TEX_BIN_DIR:$PATH"
-fi
+[[ -d $TEX_BIN_DIR ]] && export PATH="$TEX_BIN_DIR:$PATH"
 
 # Android
 ANDROID_SDK_DIR="$HOME/work/android/adt/sdk"
-if [[ -d $ANDROID_SDK_DIR ]]; then
-    export PATH="$ANDROID_SDK_DIR/tools:$ANDROID_SDK_DIR/platform-tools:$PATH"
-fi
+[[ -d $ANDROID_SDK_DIR ]] && export PATH="$ANDROID_SDK_DIR/tools:$ANDROID_SDK_DIR/platform-tools:$PATH"
 
 # Ruby
-RBENV_BIN_DIR="$HOME/.rbenv/bin"
-if [[ -d $RBENV_BIN_DIR ]]; then
-    export PATH="$RBENV_BIN_DIR:$PATH"
+RBENV_HOME="$HOME/.rbenv"
+if [[ -d $RBENV_HOME ]]; then
+    export PATH="$RBENV_BIN_DIR/bin:$PATH"
     eval "$(rbenv init -)"
 fi
 
 # Node
-NVM_SH="$HOME/.nvm/nvm.sh"
-if [[ -f $NVM_SH ]]; then
-    source $NVM_SH
-fi
+NVM_HOME="$HOME/.nvm"
+[[ -d $NVM_HOME ]] && source "$NVM_HOME/nvm.sh"
 
 # Python
-PYENV_HOME="$HOME/.pyenv/"
+PYENV_HOME="$HOME/.pyenv"
 if [[ -d $PYENV_HOME ]]; then
-    export PATH="$HOME/.pyenv/bin:$PATH"
+    export PATH="$PYENV_HOME/bin:$PATH"
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
-fi
-VIRTUALENVWRAPPER_SH="/usr/bin/virtualenvwrapper.sh"
-if [[ -f $VIRTUALENVWRAPPER_SH ]]; then
-    export VIRTUALENVWRAPPER_PYTHON="/usr/bin/python2.6"
-    export WORKON_HOME=$HOME/.virtualenvs
-    source $VIRTUALENVWRAPPER_SH
 fi
 
 # EditorConfig
 EC_HOME="/usr/local/editorconfig"
-if [[ -d $EC_HOME ]]; then
-    export PATH="$EC_HOME/bin:$PATH"
-fi
+[[ -d $EC_HOME ]] && export PATH="$EC_HOME/bin:$PATH"
 
 # ------------------------------------------------------------------------------
 # create emacs env file
