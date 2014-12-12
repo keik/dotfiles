@@ -30,6 +30,13 @@ alias l='ls -CF'
 # lang
 LANG=en_US.UTF-8
 
+# less
+LESSPIPE='/usr/bin/src-hilite-lesspipe.sh'
+if [[ -f $LESSPIPE ]]; then
+  export LESS='-R'
+  export LESSOPEN="| $LESSPIPE %s"
+fi
+
 # history
 export HISTCONTROL="ignoreboth"
 export HISTFILESIZE="4096"
