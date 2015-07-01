@@ -8,4 +8,5 @@
 .emacs.d/ido.last
 .emacs.d/srecode-map.el
 .emacs.d/semanticdb
+.emacs.d/url
 .DS_Store
