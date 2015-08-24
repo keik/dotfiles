@@ -10,4 +10,9 @@
 .emacs.d/srecode-map.el
 .emacs.d/semanticdb
 .emacs.d/url
+.emacs.d/
+
+// env-specific
+.emacs.d/inits/linux-x-*
+
 .DS_Store
