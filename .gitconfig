@@ -4,3 +4,5 @@
 
 [alias]
     tr = log --graph --all --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
+[push]
+	default = upstream
