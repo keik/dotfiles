@@ -14,3 +14,5 @@
 .emacs.d/inits/linux-x-*
 
 .DS_Store
+
+.org-id-locations
