@@ -9,6 +9,7 @@
 .emacs.d/srecode-map.el
 .emacs.d/semanticdb
 .emacs.d/url
+.emacs.d/.emacs.desktop*
 
 // env-specific
 .emacs.d/inits/linux-x-*
