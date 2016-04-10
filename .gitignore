@@ -10,6 +10,7 @@
 .emacs.d/semanticdb
 .emacs.d/url
 .emacs.d/.emacs.desktop*
+.emacs.d/.mc-lists.el
 
 // env-specific
 .emacs.d/inits/linux-x-*
