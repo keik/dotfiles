@@ -9,3 +9,5 @@
 [core]
 	excludesfile = /Users/keik/.gitignore-global
 	editor = emacsclient -q
+[diff]
+	tool = meld
